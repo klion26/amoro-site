@@ -63,7 +63,7 @@ Click on `Optimizing` in the sidebar, select the `Optimizer Group` tab, and clic
 
 Set the concurrency of the optimizer to 1 and click `OK`.
 
-Then you can switch the tab to `Optimizer`, you can find the newly launched optimizer here.
+Then you can switch the tab to `Optimizers`, you can find the newly launched optimizer here.
 
 ![Optimizers](../images/quickstart/optimizers.png)
 
@@ -128,7 +128,7 @@ Click on the `RUN` button uppon the SQL editor, and wait for the SQL query to fi
 If you have prepared the environment using Docker-Compose, you can open a terminal in docker using the following command:
 
 ```shell
-docker exec -it ams bash
+docker exec -it quickdemo bash
 ```
 
 Then you can start the standalone Flink cluster using the following command:
@@ -236,7 +236,7 @@ FROM cdc_source;
 Open a new terminal. If you deployed the demo environment using Docker-Compose, you can use the following command to reopen a terminal of the container. The required commands are already installed inside the container.
 
 ```shell
-docker exec -it ams bash
+docker exec -it quickdemo bash
 ```
 
 Execute the following command in the newly opened terminal. It will open a socket channel to the `cdc_source` table, allowing us to insert some test data into the table.
